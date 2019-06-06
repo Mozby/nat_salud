@@ -1,0 +1,31 @@
+.tootlemini {
+	display: none;
+}
+
+.btn {
+	height: 50px;
+	margin-left: 20px;
+	line-height: 70px;
+	float: right;
+	cursor: pointer;
+}
+.btn:hover {
+	color: gold;
+}
+
+@media (max-width: 620px) {
+	.btn {
+		width: 10%;
+		line-height: 59px;
+		padding: 0;
+
+		/* text-align: center; */
+		/* box-sizing: border-box; */
+		color: #8ec640;
+		font-size: 30px;
+	}
+
+	.tootlemini {
+		display: block;
+	}
+}
