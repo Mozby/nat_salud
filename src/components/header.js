@@ -4,10 +4,9 @@ import Logo from "./img/logo.png";
 
 import { FaAlignJustify } from "react-icons/fa";
 
-// import "./css/header.css";
-// import "./css/mininav.css";
-// import "./css/hover.css";
-import "./css/hamberger.css";
+import "./css/header.css";
+import "./css/mininav.css";
+import "./css/hover.css";
 
 export default class header extends Component {
   state = {
@@ -19,28 +18,29 @@ export default class header extends Component {
 
   render() {
     return (
-      <div className="navbar">
-        <div className="nav-center">
+      <div>
+        <header>
           <NavLink to="/home">
             <div className="logo">
-              <img width="30" src={Logo} alt="Natural Salud" />
+              <img width="30" src={Logo} title="Home" alt="" />
+              Natural Salud
             </div>
           </NavLink>
-          <button type="button" className="nav-btn" onClick={this.handleToogle}>
+          <button type="button" className="toggle" onClick={this.handleToogle}>
             <FaAlignJustify className="nav-icon" />
           </button>
-          <div className="change">
+          <nav>
             <ul
               className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
             >
               <li>
-                <NavLink to="/contact" className="hover">
-                  Contact
+                <NavLink to="/home" className="hover">
+                  Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/service" className="hover">
-                  Services
+                <NavLink to="/Service" className="hover">
+                  Service
                 </NavLink>
               </li>
               <li>
@@ -49,13 +49,13 @@ export default class header extends Component {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/home" className="hover">
-                  Home
+                <NavLink to="/Contact" className="hover">
+                  Contact
                 </NavLink>
               </li>
             </ul>
-          </div>
-        </div>
+          </nav>
+        </header>
       </div>
     );
   }
