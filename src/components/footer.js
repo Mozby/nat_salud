@@ -18,7 +18,7 @@ export default class footer extends Component {
 							</p>
 							<p>
 								<i className="fas fa-envelope" aria-hidden="true" />
-								team@farmerline.co
+								Fmileydis @gmail.com
 							</p>
 						</div>
 						<div className="className">

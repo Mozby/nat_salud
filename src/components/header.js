@@ -9,6 +9,7 @@ import "./css/mininav.css";
 import "./css/hover.css";
 
 export default class header extends Component {
+
   state = {
     isOpen: false
   };
@@ -23,7 +24,7 @@ export default class header extends Component {
           <NavLink to="/home">
             <div className="logo">
               <img width="30" src={Logo} title="Home" alt="" />
-              Natural Salud
+              Natural Salud 
             </div>
           </NavLink>
           <button type="button" className="toggle" onClick={this.handleToogle}>
@@ -60,3 +61,4 @@ export default class header extends Component {
     );
   }
 }
+

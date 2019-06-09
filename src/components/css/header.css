@@ -31,7 +31,7 @@ header .logo {
   margin: 0;
   color: #fff;
   height: 50px;
-  line-height: 70px;
+  line-height: 50px;
   font-size: 24px;
   float: left;
   font-weight: bold;
@@ -86,7 +86,7 @@ header nav ul li a.active {
     background: transparent;
     font-size: 30px;
     cursor: pointer;
-    outline: none;
+    /* outline: none; */
     display: block;
   }
 
@@ -152,5 +152,3 @@ header nav ul li a.active {
     margin-right: 15%;
   }
 }
-
-/* ACTION  */
