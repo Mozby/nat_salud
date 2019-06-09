@@ -10,7 +10,7 @@ header {
   left: 0;
   padding: 0 100px;
   background: #2ca1cfd7;
-  box-shadow: 0 1px 10px #00000099;
+  box-shadow: 0 5px 50px #00000099;
   width: 100%;
   box-sizing: border-box;
   position: fixed;
@@ -19,19 +19,13 @@ header {
 
 header .logo {
   color: #fff;
-  text-decoration: none;
-  height: 20px;
-  line-height: 10px;
+  height: 50px;
+  line-height: 70px;
   font-size: 24px;
   float: left;
-  /* font-weight: bold; */
+  font-weight: bold;
   cursor: pointer;
 }
-
-.logo {
-  text-decoration: none;
-}
-
 header nav {
   float: right;
 }
@@ -45,11 +39,9 @@ header nav ul {
   padding: 0;
   display: flex;
 }
-
 header nav ul li {
   list-style: none;
 }
-
 header nav ul li a {
   height: 50px;
   line-height: 50px;
@@ -60,14 +52,12 @@ header nav ul li a {
 }
 
 header nav ul li a.active {
-  background: #00000046;
-  color: white;
+  background: #ffffff48;
+  color: #ffffff;
 }
-
 .toggle {
   display: none;
 }
-
 @media (max-width: 620px) {
   .toggle {
     width: 100%;
@@ -77,20 +67,18 @@ header nav ul li a.active {
     line-height: 20px;
     text-align: right;
     box-sizing: border-box;
-    color: #8ec640;
+    background: transparent;
+    color: #000000;
     font-size: 30px;
     cursor: pointer;
   }
-
   .header {
     padding: 0 0px;
   }
-
   .toggle {
     display: block;
     top: 90px;
   }
-  /*
   .active {
     display: block;
   }
@@ -110,12 +98,11 @@ header nav ul li a.active {
   }
   header nav ul li a {
     border-bottom: 4px solid #262626;
-  } */
+  }
   .video {
     display: none;
   }
 }
-
 @media (max-width: 1280px) {
   header {
     padding: 0 10px;
@@ -130,7 +117,6 @@ header nav ul li a.active {
     margin-right: 5%;
   }
 }
-
 @media (min-width: 1440px) {
   header {
     padding: 0 300px;
@@ -141,4 +127,48 @@ header nav ul li a.active {
   .container {
     margin-right: 15%;
   }
+}
+
+/* ACTION  */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #cfcfcf;
+  background: #393d3fd7;
+  box-shadow: 1px 1px 10px 10px #22222271;
+  z-index: 1;
+  height: -100px;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.nav-icon {
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* .nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--mainTransition);
+  list-style-type: none;
+  text-decoration: none;
+} */
+
+.nav-links a {
+  color: white;
+}
+
+.show-nav {
+  margin: 0;
+  height: 100px;
+  width: 100%;
 }
