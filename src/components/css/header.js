@@ -19,20 +19,18 @@ export default class header extends Component {
 
   render() {
     return (
-      <div className="navbar">
+      <div className="header">
         <div className="nav-center">
-          <NavLink to="/home">
+          {/* <NavLink to="/home">
             <div className="logo">
               <img width="30" src={Logo} alt="Natural Salud" />
             </div>
-          </NavLink>
+          </NavLink> */}
           <button type="button" className="nav-btn" onClick={this.handleToogle}>
             <FaAlignJustify className="nav-icon" />
           </button>
-          <div>
-            <ul
-              className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
-            >
+          <div className={this.state.isOpen ? "show-nav " : "nav-links"}>
+            <ul>
               <li>
                 <NavLink to="/contact" className="hover">
                   Contact

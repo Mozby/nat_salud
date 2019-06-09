@@ -1,12 +1,14 @@
-.navbar {
-  position: fixed;
+.header {
+  position: absolute;
   top: 0;
   left: 0;
+  padding: 0 100px;
+  background: #ff0202d7;
+  box-shadow: 0 5px 50px #00000099;
   width: 100%;
-  color: #cfcfcf;
-  background: #393d3fd7;
-  box-shadow: 1px 1px 10px 10px #22222271;
-  z-index: 1;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 9;
 }
 
 /* .nav-btn {
@@ -18,19 +20,13 @@
 
 .nav-icon {
   font-size: 1.5rem;
-  color: white;
 }
 
 .nav-links {
-  height: 0;
+  height: 20px;
   overflow: hidden;
-  transition: var(--mainTransition);
   list-style-type: none;
   text-decoration: none;
-}
-
-.nav-links a {
-  color: white;
 }
 
 .show-nav {

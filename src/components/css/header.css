@@ -8,8 +8,12 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 0 100px;
-  background: #2ca1cfd7;
+  margin: 0;
+  padding: 0;
+  /* padding: 0 100px; */
+  margin: 0;
+  /* background: #2ca1cfd7; */
+  background: #cf2c2cd7;
   box-shadow: 0 5px 50px #00000099;
   width: 100%;
   box-sizing: border-box;
@@ -17,7 +21,15 @@ header {
   z-index: 9;
 }
 
+nav {
+  margin: 0;
+}
+ul {
+  margin: 0;
+}
+
 header .logo {
+  margin: 0;
   color: #fff;
   height: 50px;
   line-height: 70px;
@@ -57,11 +69,15 @@ header nav ul li a.active {
 }
 .toggle {
   display: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
+
 @media (max-width: 620px) {
   .toggle {
     width: 100%;
-    padding: 10px;
+    padding: 0;
     padding-right: 0;
     padding-left: 0;
     line-height: 20px;
@@ -71,48 +87,63 @@ header nav ul li a.active {
     color: #000000;
     font-size: 30px;
     cursor: pointer;
+    outline: none;
   }
-  .header {
-    padding: 0 0px;
-  }
+
   .toggle {
     display: block;
-    top: 90px;
+    top: 990px;
   }
   .active {
     display: block;
   }
   header nav {
-    display: none;
-    position: absolute;
+    margin: 0;
     width: 100%;
-    height: calc (100vh -5px);
-    background: #262626f3;
+    background: #1b64815d;
     top: 50px;
     left: 0;
     transition: 0.5s;
   }
+  header a {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
   header nav ul {
     display: block;
     text-align: center;
+    /* width: 100%; */
   }
+
   header nav ul li a {
-    border-bottom: 4px solid #262626;
+    border-bottom: 4px solid transparent !important;
+    text-align: center;
   }
-  .video {
-    display: none;
+
+  .nav-icon {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    height: 0px;
+    overflow: hidden;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .show-nav {
+    margin: 0;
+    height: 220px;
   }
 }
+
 @media (max-width: 1280px) {
-  header {
-    padding: 0 10px;
-  }
-  .Haiti_eco_startup img {
-    margin-top: 200px;
-  }
-  .Haiti_eco_startup img {
-    margin-left: 5%;
-  }
+  /* header {
+    padding: 0 10px;  le fameux paddind no delete
+  } */
+
   .container {
     margin-right: 5%;
   }
@@ -120,9 +151,6 @@ header nav ul li a.active {
 @media (min-width: 1440px) {
   header {
     padding: 0 300px;
-  }
-  .Haiti_eco_startup img {
-    margin-left: 15%;
   }
   .container {
     margin-right: 15%;
